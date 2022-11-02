@@ -10,7 +10,7 @@ ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get update && apt-get install -y \
 	curl jq build-essential libssl-dev libffi-dev python3 python3-venv python3-dev python3-pip\
 	build-essential cmake git \
-	openssl valgrind unzip
+	openssl valgrind unzip zip
 RUN pip3 install pexpect ptyprocess pycryptodome
 # https://github.com/actions/runner/blob/main/docs/start/envlinux.md
 
